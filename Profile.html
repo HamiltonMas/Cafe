@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <!-- Specify the compatibility mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the viewport to control the layout on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the web page -->
+    <!-- Include the PDF.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js" integrity="sha512-ml/QKfG3+Yes6TwOzQb7aCNtJF4PUyha6R3w8pSTo/VJSywl7ZreYvvtUso7fKevpsI+pYVVwnu82YO0q3V6eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="jquery.fancybox.min.css">
+    <link rel="stylesheet" href="style.css">
+        <style>
+    .container2 {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 300px;
+    }
+
+    .logo-icon {
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .icon:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+    }
+
+    .mini-icon:hover {
+      width: 25px;
+      height: 25px;
+      transition: 0.3s;
+    }
+     .contain2 {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 1000px;
+  /* position: center; Remove this line */
+  /* right: 400px; Remove this line */
+  display: flex; /* Add display flex */
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center horizontally */
+}
+    .line {
+      border-top: 0.5px solid lightskyblue; /* Black line on top */
+      width: 1000px; /* Full width */
+      height: 0px; /* No height (creates a line) */
+      margin: 10px auto; /* Center and add margin */
+    }
+   
+    .line2{
+      border-top: 0.5px solid lightskyblue; /* Black line on top */
+      width: 400px; /* Full width */
+      height: 0px; /* No height (creates a line) */
+      margin: 10px auto; /* Center and add margin */
+    }
+    
+     input[type="file"] {
+            display: none;
+        }
+
+        /* Style for the custom button */
+        .custom-file-upload {
+            border: none;
+            display: inline-block;
+            padding: 15px 12px;
+            cursor: pointer;
+            background-color:lightskyblue;
+            border-radius: 4px;
+            color: white;
+        }
+        i{
+          font-size: 40px;
+        }
+        #user_icon{
+            font-size: 120px;
+        }
+        
+  </style>
+  <link rel="stylesheet" href="new1Style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="header-logo">
+                            <a href="index.html">
+                                <h2><span>H&M</span> Cafe</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="main-navigation">
+                            <button class="menu-toggle"><span></span><span></span></button>
+                            <nav class="header-menu">
+                                <ul class="menu food-nav-menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="AboutUs.html">About</a></li>
+                                    <li><a href="Menu.html">Menu</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header-right">
+                                <form action="#" class="header-search-form for-des">
+                                    <input type="search" class="form-input" placeholder="Search Here...">
+                                    <button type="submit">
+                                        <i class="uil uil-search"></i>
+                                    </button>
+                                </form>
+                                <a href="#" class="header-btn header-cart">
+                                    <i class="uil uil-shopping-bag"></i>
+                                </a>
+                                <a href="Profile.html" class="header-btn">
+                                    <i class="uil uil-user-md"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <div class="contain2">
+        <br>
+        <br>
+        <i class='bx bxs-user'></i><br><br>
+        <h3 id="user_iconn"></h3> 
+        <div class="line2">
+             <br>
+         </div>
+         <br>
+         <br>
+        <i class='bx bxs-envelope'></i> 
+        <h3  id="envelop"></h3>
+         <div class="line2">
+             <br>
+         </div>
+         <br>
+         <br>
+         
+         &nbsp &nbsp &nbsp &nbsp &nbsp <i class="bx bxs-phone-call"></i> 
+         <h3 id="phone"></h3>
+        <div class="line2">
+             <br>
+         </div>
+         <br>
+         <br>
+         <div class="footer">
+           <p>&copy;2024 The Cafe - Cookies, Privacy and Terms</p>
+         </div>
+    </div>
+    </body>
+</html>
